@@ -1,0 +1,32 @@
+{
+  "name": "mt5mg_auth",
+  "version": "0.0.1",
+  "description": "MT5MG_Auth",
+  "main": "server.ts",
+  "repository": "https://github.com/RanvalsSoftware/MT5MG_Auth.git",
+  "author": "none",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "npx tsc -w | nodemon dist/server.js",
+    "devwin": "tsc -w & nodemon dist/server.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -p .",
+    "help": "tsc --help"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^7.2.2",
+    "@fastify/mysql": "^4.3.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.3",
+    "fastify": "^4.18.0",
+    "mt5mg_auth": "file:"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  }
+}

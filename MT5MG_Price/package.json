@@ -1,0 +1,26 @@
+{
+  "name": "mt5mg_price",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsc && node --env-file=.env dist/server.js",
+    "build": "npx tsc",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^8.0.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.26.2",
+    "mt5mg_price": "file:"
+  }
+}

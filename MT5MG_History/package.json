@@ -1,0 +1,32 @@
+{
+  "name": "mt5mg_history",
+  "version": "0.0.1",
+  "description": "NexaTrade Server software",
+  "main": "server.ts",
+  "repository": "https://github.com/RanvalsSoftware/MT5MG_History.git",
+  "author": "none",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsc -w | nodemon dist/server.js",
+    "devwin": "tsc -w & nodemon dist/server.js",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc -p .",
+    "help": "tsc --help"
+  },
+  "dependencies": {
+    "@fastify/jwt": "^7.2.2",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.18.0",
+    "mt5mg_history": "file:",
+    "net": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,3 @@
+{   
+    "ignore": ["dist/store/*.js", "dist/store/*.json", "src/store/*.json"] 
+}

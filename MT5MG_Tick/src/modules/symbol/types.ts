@@ -1,0 +1,54 @@
+import { ITick } from "../tick/types";
+import { ISession } from "../../types/session";
+
+export type ISymbol = {
+    Idx: number;
+    Symbol: string;
+    Path: string;
+    Description: string;
+    International: string;
+    CalcMode: number;
+    Category: string;
+    ContractSize: number;
+    Exchange: string;
+    CurrencyBase: string;
+    CurrencyMargin: string;
+    CurrencyProfit: string;
+    Digits: number;
+    Spread: number;
+    SpreadBalance: number;
+    TickValue: number;
+    StopsLevel: number;
+    VolumeMin: number;
+    VolumeMax: number;
+    VolumeStep: number;
+    VolumeLimit: number;
+    MarginInitial: number;
+    MarginLong: number;
+    MarginShort: number;
+    MarginLimit: number;
+    MarginStop: number;
+    MarginStopLimit: number;
+    MarginRateCurrency: number;
+    SwapMode: number;
+    SwapLong: number;
+    SwapShort: number;
+    TimeStart: number;
+    TimeExpiration: number;
+    PriceLimitMax: number;
+    PriceLimitMin: number;
+    TradeMode: number;
+    QuotesTimeout: number;
+    SwapRateMonday: number;
+    SwapRateTuesday: number;
+    SwapRateWednesday: number;
+    SwapRateThursday: number;
+    SwapRateFriday: number;
+    SwapRateSaturday: number;
+    SwapRateSunday: number;
+    FaceValue: number;
+    Tick: ITick;
+    Sessions: ISession[][] | null;
+
+    toJSON: () => any;
+}
